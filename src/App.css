@@ -10,46 +10,15 @@ body {
   color: white;
 }
 
-.input-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .completed {
   text-decoration: line-through;
-}
-
-h2 {
-  text-align: center;
-  margin: 3rem;
-}
-
-table {
-  margin: auto;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-  background-color: rgb(112, 198, 170);
-  border-radius: 3%;
-  box-shadow: 0px 5px 20px 15px rgba(0, 0, 0, 0.3);
-}
-
-td,
-th {
-  padding: 1rem;
-  font-size: larger;
-}
-
-th {
-  font-weight: bold;
-  text-decoration: underline;
 }
 
 button {
   width: 5rem;
   margin: 0.5rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 4px;
   cursor: pointer;
   font-size: medium;
   white-space: nowrap;
@@ -57,24 +26,10 @@ button {
 }
 
 button:hover {
-  background-color: rgb(29, 15, 15);
+  background-color: #230f48;
   color: white;
-}
-
-.form-field {
-  margin: 1rem 0 1rem 0;
-  font-size: larger;
-}
-
-.form-field input[type="text"] {
-  font-size: large;
-  border-radius: 5px;
-  padding: 0.4rem;
-}
-
-input:not([type="checkbox"]) {
-  width: 20rem;
-  padding: 0.2rem;
+  font-weight: bold;
+  transition: 0.4s ease-in-out background-color, 0.5s ease-in-out color, 0.5s ease-in-out font-weight;
 }
 
 input[type="checkbox"] {

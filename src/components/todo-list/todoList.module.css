@@ -1,0 +1,29 @@
+.table-container {
+    max-width: 700px;
+    margin: auto;
+    overflow: auto;
+    margin-bottom: 2rem;
+    box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(112, 198, 170);
+    border-radius: 8px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    display: flex;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 1rem;
+    font-size: larger;
+}
+
+th {
+    font-weight: bold;
+    text-decoration: underline;
+}

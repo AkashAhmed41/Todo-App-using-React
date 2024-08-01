@@ -1,41 +1,43 @@
+.config-container {
+    max-width: 700px;
+    margin: auto;
+}
+
 .input-form {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
-button {
-    width: 5rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: medium;
-    white-space: nowrap;
-    box-sizing: content-box;
+.input-form div {
+    flex-grow: 9;
 }
 
-button:hover {
-    background-color: rgb(29, 15, 15);
-    color: white;
+.input-form button {
+    flex-grow: 1;
+    max-width: 100px;
 }
 
 .form-field {
-    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     font-size: larger;
 }
 
-.form-field input[type="text"] {
+.form-field label {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.form-field input {
+    flex-grow: 4;
     font-size: large;
     border-radius: 5px;
     padding: 0.4rem;
-}
-
-input:not([type="checkbox"]) {
-    width: 20rem;
-    padding: 0.2rem;
-}
-
-input[type="checkbox"] {
-    transform: scale(1.5);
+    outline: none;
 }

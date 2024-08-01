@@ -10,6 +10,8 @@ import {
   setTodoForEdit,
 } from "../../store/todoSlice";
 
+import styles from "./configTodo.module.css";
+
 const ConfigTodoComponent = () => {
   const todoForEdit = useSelector((state) => state.todosReducer.todoForEdit);
   const title = useSelector((state) => state.todosReducer.newTodoTitle);
@@ -33,10 +35,10 @@ const ConfigTodoComponent = () => {
   };
 
   return (
-    <div>
+    <div className={styles["config-container"]}>
       <h1>{isEmpty(todoForEdit) ? "Add New Todo" : "Update Your Todo"}</h1>
-      <form className="input-form" onSubmit={handleSubmit}>
-        <div className="form-field">
+      <form className={styles["input-form"]} onSubmit={handleSubmit}>
+        <div className={styles["form-field"]}>
           <label htmlFor="title">
             {isEmpty(todoForEdit) ? "Todo Title: " : "Edited Title: "}
           </label>
