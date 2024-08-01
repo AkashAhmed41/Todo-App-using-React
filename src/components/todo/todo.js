@@ -1,6 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTodo, markAsComplete, setTodoForEdit } from "../store/todoSlice";
+import {
+  deleteTodo,
+  markAsComplete,
+  setTodoForEdit,
+} from "../../store/todoSlice";
 
 const TodoComponent = (props) => {
   const { id, title, isCompleted } = props.todo;

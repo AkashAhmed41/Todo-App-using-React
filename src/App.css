@@ -3,33 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(54, 63, 68);
   text-align: center;
   color: white;
-}
-
-.app-header {
-  padding: 2rem;
-  color: #312424;
-  background-color: rgb(112, 198, 170);
-  margin-bottom: 2rem;
-}
-
-.component-container {
-  color: black;
-  width: fit-content;
-  margin: auto;
-  padding: 1% 5% 1% 5%;
-  background-color: #1aa1a1;
-  border-radius: 5%;
-  box-shadow: 0px 5px 20px 15px rgba(0, 0, 0, 0.5);
-  margin-bottom: 2rem;
-}
-
-.component-container h1 {
-  margin: 3%;
-  padding: 2%;
 }
 
 .input-form {
@@ -46,6 +24,7 @@ h2 {
   text-align: center;
   margin: 3rem;
 }
+
 table {
   margin: auto;
   border-collapse: collapse;
@@ -76,6 +55,7 @@ button {
   white-space: nowrap;
   box-sizing: content-box;
 }
+
 button:hover {
   background-color: rgb(29, 15, 15);
   color: white;

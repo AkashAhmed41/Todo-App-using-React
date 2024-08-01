@@ -1,14 +1,15 @@
 import React from "react";
 
-import AppComponent from "../components/AppComponent";
+import HeaderSection from "../sections/header-section/header";
+import MainSection from "../sections/main-section/main";
 
-const Home = () => {
+const Homepage = () => {
   return (
-    <div>
-      <h1 className="app-header">Todo App With Redux-Toolkit</h1>
-      <AppComponent />
-    </div>
+    <>
+      <HeaderSection />
+      <MainSection />
+    </>
   );
 };
 
-export default Home;
+export default Homepage;

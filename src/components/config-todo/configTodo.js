@@ -8,7 +8,7 @@ import {
   editTodo,
   setUpdatedTitle,
   setTodoForEdit,
-} from "../store/todoSlice";
+} from "../../store/todoSlice";
 
 const ConfigTodoComponent = () => {
   const todoForEdit = useSelector((state) => state.todosReducer.todoForEdit);
