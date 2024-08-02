@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
+import StartUpMessageComponent from "../startup-message/startupMessage";
 import TodoComponent from "../todo/todo";
 
 import styles from "./todoList.module.css";
@@ -8,7 +9,9 @@ import styles from "./todoList.module.css";
 const TodoListComponent = () => {
   const todos = useSelector((state) => state.todosReducer.todos);
 
-  return (
+  return todos.length === 0 ? (
+    <StartUpMessageComponent />
+  ) : (
     <>
       <h1>List of Your Todo Tasks :</h1>
       <div className={styles["table-container"]}>

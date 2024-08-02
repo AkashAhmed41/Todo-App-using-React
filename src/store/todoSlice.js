@@ -1,11 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { v4 as uuidv4 } from "uuid";
 
 const initialTodos = {
-  todos: [
-    { id: uuidv4(), title: "Waking Up", isCompleted: false },
-    { id: uuidv4(), title: "Go for a walk", isCompleted: false },
-  ],
+  todos: [],
   newTodoTitle: "",
   todoForEdit: {},
 };
