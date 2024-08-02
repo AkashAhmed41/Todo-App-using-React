@@ -15,7 +15,7 @@ body {
 }
 
 button {
-  width: 5rem;
+  min-width: 4rem;
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
